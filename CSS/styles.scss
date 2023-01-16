@@ -1,0 +1,156 @@
+/*Estilos generales*/
+:root {
+  --primary: #006cb5;
+  --secondary: #04b6ad;
+  --complementary: #252529;
+  --white: white;
+}
+$varela: "Varela Round", sans-serif;
+$ubuntu: "Quicksand", sans-serif;
+p {
+  font-family: $varela !important;
+  font-size: 1.4rem !important ;
+}
+
+/*1:HEADER*/
+/*Menu de navegacion*/
+.navbar {
+  background-color: var(--primary);
+  height: 4.5rem;
+  .container-fluid {
+    background-color: var(--primary);
+  }
+}
+.active {
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
+.navbar-nav a {
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--secondary);
+    border-radius: 10px;
+  }
+}
+
+#menu .navbar-toggler {
+  padding: auto;
+  font-size: 1.25rem;
+  border: 0;
+  border-radius: 0;
+  outline: 0 !important;
+  box-shadow: none !important;
+  padding: 1.25rem 0.75rem !important;
+}
+
+#menu .boton-menu::before {
+  content: "\f0c9";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 1000;
+  font-size: 2rem;
+}
+#menu .icono-cerrar::before {
+  content: "\f00d";
+  font-weight: 900;
+  position: relative;
+  font-size: 2rem;
+}
+
+/*portada*/
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.welcome {
+  background: url("../IMG/portada1.webp") no-repeat center center/cover;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  font-family: $varela;
+  //font-size: 5.3rem;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0);
+}
+.btn-p {
+  width: 280px;
+  height: 60px;
+  font-size: 1.3rem;
+  background-color: var(--secondary);
+  border-radius: 35px;
+  font-family: $varela;
+}
+.p-welcome {
+  text-shadow: 2px 3px 4px rgba(0, 0, 0);
+}
+
+/*2: SOBRE MÍ*/
+h2 {
+  text-shadow: 1px 1px 2px rgb(131, 131, 131);
+}
+/*3: SERVICES*/
+.services {
+  background-color: var(--complementary);
+}
+
+.li {
+  font-family: $ubuntu;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  list-style: none;
+}
+.services .row .col-sm-4 {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+/*4: CONTACTOS*/
+.contact .row1 {
+  background-color: var(--secondary);
+}
+/*iconos*/
+.fas,
+.fab {
+  transition: 0.2s ease-in-out;
+}
+
+.fas:hover,
+.fab:hover {
+  transform: scale(1.5, 1.5);
+}
+.fa-facebook-square {
+  color: #1442db;
+}
+
+.fa-instagram-square {
+  color: #cf39ca;
+}
+
+.fa-linkedin {
+  color: #0897d4;
+}
+.fa-twitter-square {
+  color: #1da1f2;
+}
+
+.fa-whatsapp-square {
+  color: #2eca43;
+}
+.fa-telegram {
+  color: #26a4e3;
+}
+.triangulo {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--secondary);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(50%) rotate(45deg);
+}
+/*FOOTER*/
+#footer{
+  height: 5rem;
+  background-color: var(--complementary);
+}
